@@ -1,14 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Board } from "@/components/Board";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { Whiteboard } from "@/components/Whiteboard";
+import { Button } from "@/components/ui/button";
+import { Layout, Pencil } from "lucide-react";
 
-const Index = () => {
+export default function Index() {
+  const [showWhiteboard, setShowWhiteboard] = useState(false);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <header className="border-b">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <h1 className="text-2xl font-bold">RoadMAP</h1>
+          <div className="flex items-center gap-4">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={() => setShowWhiteboard(!showWhiteboard)}
+            >
+              <Pencil className="h-[1.2rem] w-[1.2rem]" />
+            </Button>
+            <ThemeToggle />
+          </div>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-4">
+        <Board />
+      </main>
+
+      {showWhiteboard && (
+        <Whiteboard onClose={() => setShowWhiteboard(false)} />
+      )}
     </div>
   );
-};
-
-export default Index;
+}
