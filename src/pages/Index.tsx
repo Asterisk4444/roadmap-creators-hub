@@ -3,7 +3,7 @@ import { Board } from "@/components/Board";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Whiteboard } from "@/components/Whiteboard";
 import { Button } from "@/components/ui/button";
-import { Layout, Pencil } from "lucide-react";
+import { Pencil } from "lucide-react";
 
 export default function Index() {
   const [showWhiteboard, setShowWhiteboard] = useState(false);
@@ -11,7 +11,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
           <h1 className="text-2xl font-bold">RoadMAP</h1>
           <div className="flex items-center gap-4">
             <Button

@@ -77,11 +77,11 @@
 }
 
 .column {
-  @apply p-4 rounded-lg bg-muted min-w-[300px] w-[300px];
+  @apply p-4 rounded-lg bg-muted min-w-[300px] w-[300px] md:w-[300px] sm:w-full;
 }
 
 .board {
-  @apply flex gap-4 p-4 overflow-x-auto min-h-[calc(100vh-8rem)];
+  @apply flex flex-col sm:flex-row gap-4 p-4 overflow-x-auto min-h-[calc(100vh-8rem)] sm:min-h-[calc(100vh-4rem)];
 }
 
 .whiteboard {

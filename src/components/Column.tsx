@@ -45,7 +45,7 @@ export function Column({
   };
 
   return (
-    <div className="column">
+    <div className="column w-full sm:w-[300px]">
       <div className="flex justify-between items-center mb-4">
         <h3 className="font-semibold">{column.title}</h3>
         <Button
@@ -84,7 +84,7 @@ export function Column({
             <Plus className="mr-2 h-4 w-4" /> Add Task
           </Button>
         </DialogTrigger>
-        <DialogContent>
+        <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>Add New Task</DialogTitle>
           </DialogHeader>
@@ -104,7 +104,7 @@ export function Column({
               value={newTask.scheduledFor}
               onChange={(e) => setNewTask({ ...newTask, scheduledFor: e.target.value })}
             />
-            <Button onClick={handleAddTask}>Add Task</Button>
+            <Button onClick={handleAddTask} className="w-full">Add Task</Button>
           </div>
         </DialogContent>
       </Dialog>
