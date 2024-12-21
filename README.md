@@ -1,69 +1,46 @@
-# Welcome to your Lovable project
+# RoadMAP
 
-## Project info
+### The Ultimate Planner App by Risk @ PGD
 
-**URL**: https://lovable.dev/projects/24cab391-0f71-4743-9350-e0ee42450f6e
+RoadMAP is a **free-to-use task planner app** designed to make organizing your life simple and efficient. This is the **first version** of RoadMAP, and while some features are still being polished, we're excited to share it with the world! 🚀
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Table of Contents
+- [About RoadMAP](#about-roadmap)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Coming Soon](#coming-soon)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/24cab391-0f71-4743-9350-e0ee42450f6e) and start prompting.
+## About RoadMAP
+RoadMAP is designed to be a cross-platform, feature-rich planner app. Whether you want to plan your day, track your goals, or brainstorm ideas, RoadMAP has the tools you need to stay organized.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Features
+- **Add/Delete Tasks**: Quickly manage your to-do list.
+- **Add New Columns**: Customize your planner with ease.
+- **Cross-Platform Screensize Support**: Works beautifully on all screen sizes.
+- **Dark/Light Mode**: Choose between light and dark themes to match your preference.
+- **Toggleable Whiteboard**: Brainstorm and organize visually with a built-in whiteboard.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technologies Used
+This project is built with:
+- **Vite**: Lightning-fast development environment.
+- **TypeScript**: Strongly typed code for better reliability.
+- **React**: Modern, component-based UI development.
+- **shadcn-ui**: Intuitive UI components.
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Coming Soon
+We're actively working on new features, including:
+- **Save Feature**: Save your whiteboard and planner configurations.
+- **Enhanced Task Management**: Additional task functionalities for better productivity.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/24cab391-0f71-4743-9350-e0ee42450f6e) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Stay tuned for updates!
